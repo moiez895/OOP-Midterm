@@ -87,20 +87,28 @@ int main() {
             cout << "Enter your name: ";
             getline(cin, memberName);
             gym.bookSlot(memberName);
+             system("PAUSE");
+            system("cls");
             break;
         case 2:
             cout << "Enter your name to cancel booking: ";
             getline(cin, memberName);
             gym.cancelBooking(memberName);
+             system("PAUSE");
+             system("cls");
             break;
         case 3:
             gym.printBookings();
+             system("PAUSE");
+             system("cls");
             break;
         case 4:
             cout << "Exiting...\n";
             break;
         default:
             cout << "Invalid choice. Try again.\n";
+             system("PAUSE");
+             system("cls");
             break;
         }
     } while (choice != 4);
